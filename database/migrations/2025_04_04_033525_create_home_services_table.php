@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('home_services', function (Blueprint $table) {
             $table->id();
-            $table->string('slog');
+            $table->string('slug');
             $table->string('name');
             $table->string('thumbnail');
             $table->text('about');
