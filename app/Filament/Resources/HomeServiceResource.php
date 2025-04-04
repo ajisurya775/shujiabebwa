@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\HomeServiceResource\Pages;
+use App\Filament\Resources\HomeServiceResource\RelationManagers\TestimonialsRelationManager;
 use App\Models\HomeService;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
@@ -113,7 +114,7 @@ class HomeServiceResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            TestimonialsRelationManager::class
         ];
     }
 
