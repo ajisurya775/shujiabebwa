@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->foreignId('home_service_id')->constrained()->cascadeOnDelete();
             $table->decimal('price', 14, 2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
